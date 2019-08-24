@@ -1,11 +1,18 @@
 import styled from 'styled-components';
 
 export const StyledProjects= styled.div`
-a { 
+
+.content {
+    overflow: scroll;
+}
+
+.projectLink { 
     color: #007FFF; 
     text-decoration:none;
-    padding:20px;
+    padding:0px;
     padding-top:30px;
+    padding-bottom:20px;
+
 }
 
 ul{
@@ -13,10 +20,11 @@ ul{
     padding:0;
 }
 
-li {
+a,li {
     list-style-type: none;
     font: bold 70px futura;
     text-align: left;
+    padding: 0;
 }
 
 li:nth-child(odd){
@@ -27,16 +35,5 @@ li:nth-child(even){
     color:#979797;
 }
 
-
-.icons {
-    text-align: right;
-    position: absolute;
-    right:30px
-    bottom:20px;
-}
-
-img {
-    padding:10px
-}
 
 `;

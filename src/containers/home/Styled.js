@@ -20,19 +20,28 @@ export const StyledHome = styled.div`
 .container {
     display: grid;
     grid-template-columns: 5% 5% auto ;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 10% 70% 20%;
     grid-template-areas: 'a b c'
-                         'd e f';
-  }
+                         'd e f'
+                         'g h i';
+}
 
 
 .header {
     color:red;
     display: flex;
     font: bold 16px futura;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
 }
 
-a { 
+.projectsTitle {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.category { 
     color: #007FFF; 
     text-decoration:none;
     padding:20px;
@@ -47,6 +56,17 @@ a {
     background-image: url(${img});
     background-size: cover;
     background-position:0px
+}
+
+.icons {
+    text-align: right;
+    position: absolute;
+    right:30px
+    bottom:20px;
+}
+
+img {
+    padding:10px
 }
 
 `;
