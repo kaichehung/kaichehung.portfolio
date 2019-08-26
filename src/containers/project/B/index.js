@@ -14,12 +14,11 @@ export default class B extends Component {
         return(
             <StyledB>
                 <div className='head'>
-                    <img className='headImg' src={require('../../../assets/fakeData/fakeHeadImg.png')} alt='' height='' />
-                    <h1>Increasing Prosperity With Positive Thinking</h1>
+                    <h1>Piggy Baku</h1>
+                    <h2>UX/UI Design</h2>
+                    <img className='headImg' src={require('../../../assets/fakeData/piggyBaku-h.png')} alt='' height='' />
+
                 </div>
-                <div className='content'>
-                    <p>As humans, we have progressed in so many ways, but we have lost touch with our bodies, nature, and the power of prayer. There seems to be a spiritual renaissance, of sorts, going on in the “new age” movement.</p>
-                </div>   
             </StyledB>
         )
     }

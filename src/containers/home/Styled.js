@@ -3,6 +3,7 @@ import img from '../../assets/images/kai2.png';
 
 export const StyledHome = styled.div`
 * { 
+    box-sizing: border-box
     @font-face {
     font-family: "Nunito";
     src: url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
@@ -20,7 +21,7 @@ export const StyledHome = styled.div`
 .container {
     display: grid;
     grid-template-columns: 5% 5% auto ;
-    grid-template-rows: 10% 70% 20%;
+    grid-template-rows: 60px 530px auto;
     grid-template-areas: 'a b c'
                          'd e f'
                          'g h i';
@@ -31,14 +32,11 @@ export const StyledHome = styled.div`
     color:red;
     display: flex;
     font: bold 16px futura;
-    grid-column-start: 3;
-    grid-column-end: 4;
-
+    grid-column: 3 / 4;
 }
 
 .projectsTitle {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column: 3 / 4;
 }
 
 .category { 
@@ -49,10 +47,10 @@ export const StyledHome = styled.div`
 }
 
 .bg{
-    z-index:-1;
+    z-index:-2;
     position: absolute;
     top:0px; left:0px;
-    width: 101vw; height:100vh;
+    width: 100vw; height:100vh;
     background-image: url(${img});
     background-size: cover;
     background-position:0px
@@ -60,7 +58,7 @@ export const StyledHome = styled.div`
 
 .icons {
     text-align: right;
-    position: absolute;
+    position: fixed;
     right:30px
     bottom:20px;
 }

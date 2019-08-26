@@ -4,15 +4,15 @@ import PropTypes from 'prop-types';
 import { Map, List } from 'immutable';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import Projects from '../projects'
-import Articles from '../articles'
-import About from '../about'
+import Projects from '../Projects'
+import Articles from '../Articles'
+import About from '../About'
 import A from '../project/A'
 import B from '../project/B'
 import C from '../project/C'
 import D from '../project/D'
 import { StyledHome } from './Styled';
-
+import BgComponent from '../components/BgComponent'
 
 // import {
 // } from './actions';
@@ -73,7 +73,8 @@ class Home extends Component {
                     </div>
                 </div>
 
-                <div className='bg'></div>
+                <BgComponent/>
+                {/* <div className='bg'></div> */}
             </StyledHome>
         );
     }

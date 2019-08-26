@@ -22,7 +22,7 @@ ul{
 
 a,li {
     list-style-type: none;
-    font: bold 70px futura;
+    font: bold 4.5vw futura;
     text-align: left;
     padding: 0;
 }
