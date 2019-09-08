@@ -14,7 +14,7 @@ export default class D extends Component {
         return(
             <StyledD>
                 <div className='head'>
-                    <img className='headImg' src={require('../../../assets/fakeData/fakeHeadImg.png')} alt='' height='' />
+                    <img className='headImg' src={require('../../../../assets/fakeData/fakeHeadImg.png')} alt='' height='' />
                     <h1>Increasing Prosperity With Positive Thinking</h1>
                 </div>
                 <div className='content'>

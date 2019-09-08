@@ -16,7 +16,7 @@ export default class B extends Component {
                 <div className='head'>
                     <h1>Piggy Baku</h1>
                     <h2>UX/UI Design</h2>
-                    <img className='headImg' src={require('../../../assets/fakeData/piggyBaku-h.png')} alt='' height='' />
+                    <img className='headImg' src={require('../../../../assets/fakeData/piggyBaku-h.png')} alt='' height='' />
 
                 </div>
             </StyledB>

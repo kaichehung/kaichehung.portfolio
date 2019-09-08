@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledA= styled.div`
-
-
+export const StyledSnake= styled.div`
 * {
     padding-left:20px;
     text-align:left
@@ -18,9 +16,7 @@ export const StyledA= styled.div`
     width:100%;
 }
 
-.content{
+.content{s
     width: 70%;
 }
-
-
 `;

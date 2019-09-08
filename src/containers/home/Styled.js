@@ -35,16 +35,18 @@ export const StyledHome = styled.div`
     grid-column: 3 / 4;
 }
 
-.projectsTitle {
-    grid-column: 3 / 4;
-}
-
-.category { 
+.header>a { 
     color: #007FFF; 
     text-decoration:none;
     padding:20px;
     padding-top:30px;
 }
+
+.projectsTitle {
+    grid-column: 3 / 4;
+}
+
+
 
 .bg{
     z-index:-2;
@@ -66,5 +68,28 @@ export const StyledHome = styled.div`
 img {
     padding:10px
 }
+
+//transition group
+  .page-enter {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  
+  .page-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .page-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .page-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+  }
 
 `;

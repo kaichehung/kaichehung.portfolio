@@ -4,13 +4,16 @@ import PropTypes from 'prop-types';
 import { Map, List } from 'immutable';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import Projects from '../Projects'
-import Articles from '../Articles'
-import About from '../About'
-import A from '../project/A'
-import B from '../project/B'
-import C from '../project/C'
-import D from '../project/D'
+import { CSSTransition, TransitionGroup } from 'react-transition-group'
+
+//Components
+import ProjectList from './ProjectList'
+import Articles from './Articles'
+import About from './About'
+import Snake from './Projects/Snake'
+import B from './Projects/B'
+import C from './Projects/C'
+import D from './Projects/D'
 import { StyledHome } from './Styled';
 import BgComponent from '../components/BgComponent'
 
@@ -31,34 +34,104 @@ class Home extends Component {
     componentWillUnmount(){}
     componentDidUpdate(){}
 
-    //eventHandlers.....
     render(){
         // const {
         //     //snake,
         // } = this.props;
+        const navRoutes = [
+            {
+                path: "/",
+                exact: true,
+                component: ProjectList,
+            },
+            {
+                path: "/articles/",
+                exact: false,
+                component: Articles,
+            },
+            {
+                path: "/about/",
+                exact: false,
+                component: About,
+            },
+        ];                
+        const projectsRoutes = [
+            {
+                path: "/snake",
+                exact: false,
+                component: Snake,
+            },
+            {
+                path: "/B",
+                exact: false,
+                component: B,
+            },
+            {
+                path: "/C",
+                exact: false,
+                component: C,
+            },
+            {
+                path: "/D",
+                exact: false,
+                component: D,
+            },
+        ];
 
         return(
             <StyledHome>                
                 <div className='container'>
                     <div className='header'>
-                        <Link className='category' to="/">PROJECTS</Link>
-                        <Link className='category' to="/articles">ARTICLES</Link>
-                        <Link className='category' to="/about">ABOUT</Link>
+                        <Link to="/">PROJECTS</Link>
+                        <Link to="/articles">ARTICLES</Link>
+                        <Link to="/about">ABOUT</Link>
                     </div>
 
                     <div className='projectsTitle'>
                         <Switch>
-                            <Route path="/" exact component={Projects} />
-                            <Route path="/articles/" component={Articles} />
-                            <Route path="/about/" component={About} />
-                            
-                            <Route path="/A" component={A} />
-                            <Route path="/B" component={B} />
-                            <Route path="/C" component={C} />
-                            <Route path="/D" component={D} />
 
+                            {navRoutes.map(({path ,exact ,component},index)=>(
+                                <Route key={index} path={path} exact={exact} component={component} />
+                                ))}
+                            {projectsRoutes.map(({path ,exact ,component:Component },index)=>(
+                                <Route key={index} path={path} exact={exact}>
+                                    {({match})=>(
+                                    <TransitionGroup>
+                                        <CSSTransition
+                                            in={match != null}
+                                            timeout={300}
+                                            classNames="page"
+                                            unmountOnExit
+                                            >
+                                            <div className="page">
+                                                <Component />
+                                            </div>
+                                        </CSSTransition>
+                                    </TransitionGroup>
+                                    )}
+                                </Route>
+                                ))}
                         </Switch>    
                     </div>
+
+
+
+        {/* {routes.map(({ path, Component }) => (
+            <Route key={path} exact path={path}>
+              {({ match }) => (
+                <CSSTransition
+                  in={match != null}
+                  timeout={300}
+                  classNames="page"
+                  unmountOnExit
+                >
+                  <div className="page">
+                    <Component />
+                  </div>
+                </CSSTransition>
+              )}
+            </Route>
+        ))} */}
 
                     <div className='icons'>
                         <a href="https://github.com/kaichehung" target="_blank">
@@ -74,7 +147,6 @@ class Home extends Component {
                 </div>
 
                 <BgComponent/>
-                {/* <div className='bg'></div> */}
             </StyledHome>
         );
     }

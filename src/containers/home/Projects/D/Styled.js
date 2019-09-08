@@ -18,7 +18,7 @@ export const StyledD= styled.div`
     width:100%;
 }
 
-.content{
+.content{s
     width: 70%;
 }
 `;
