@@ -18,7 +18,8 @@ export default class NYCCimreDataVis extends Component {
                         Data Visualization
                     </h1>
                     <h2>Data Vis</h2>
-                    
+
+
                 </div>  
             </StyledNYCCimreDataVis>
         )

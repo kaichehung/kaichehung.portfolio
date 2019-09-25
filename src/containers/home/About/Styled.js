@@ -35,13 +35,13 @@ export const StyledAbout= styled.div`
 }
 
 .info{
-    margin-top:30px;
+    margin-top:0px;
     display:flex;
     flex-wrap: wrap;
 }
 
 .infoType{
-    margin-top:20px;
+    margin-top:0px;
     margin-left:7vw;
     width:250px;
 

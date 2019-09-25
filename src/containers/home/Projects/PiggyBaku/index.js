@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { directive } from '@babel/types';
 import {StyledPiggyBaku} from './Styled'
-
+import WaveComponent from './WaveComponent'
 
 export default class PiggyBaku extends Component {
 
@@ -16,7 +16,7 @@ export default class PiggyBaku extends Component {
                 <div className='head'>
                     <h1>Piggy Baku</h1>
                     <h2>UX/UI Design</h2>
-                    
+                    <WaveComponent className ='bgWave' />
                 </div>
             </StyledPiggyBaku>
         )

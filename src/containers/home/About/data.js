@@ -2,7 +2,8 @@ export const skillData = {
     'Web Development':[
             'HTML, CSS, Javascript',
             'React, Redux, ReactNative',
-            'Node.js, Express, MongoDB'
+            'Node.js, Express, MongoDB',
+            'D3.js, Three.js'
     ]
     ,    
     'UX/UI Design & Prototype':[

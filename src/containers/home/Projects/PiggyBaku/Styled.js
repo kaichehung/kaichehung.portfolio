@@ -2,13 +2,12 @@ import styled from 'styled-components';
 
 export const StyledPiggyBaku= styled.div`
 
-img {
-    width: 100 vh;
-    z-index:-1;
-    position:absolute;
-    top:0px; left:0px;
-
-}
+// img {
+//     width: 100 vh;
+//     z-index:-1;
+//     position:absolute;
+//     top:0px; left:0px;
+// }
 
 
 * {
@@ -24,7 +23,7 @@ h1{
     display: inline-block;
     list-style-type: none;
     font: bold 70px futura;
-    // color: white;
+    color: white;
     text-align: left;
     padding: 0;
     margin-bottom: 0px;
@@ -33,7 +32,8 @@ h1{
 h2{
     display: inline-block;
     font: bold 28px futura;
-    // color: white;
+    color: white;
+    
  
 }
 
@@ -44,6 +44,10 @@ h2{
 
 .content{
     width: 70%;
+
+}
+
+.bgWave{
 
 }
 `;
