@@ -6,19 +6,22 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { directive } from '@babel/types';
 import {StyledSnake} from './Styled'
-
+import SubApp from './src/index'
 export default class Snake extends Component {
 
     render(){
         return(
             <StyledSnake>
-                <div className='head'>
-                    <img className='headImg' src={require('../../../../assets/fakeData/fakeHeadImg.png')} alt='' height='' />
-                    <h1>Snake</h1>
+                <div className='head'>                    
+                    <h1 className='title projectTitle'>Snake</h1>
                 </div>
                 <div className='content'>
-                    <p>As humans, we have progressed in so many ways, but we have lost touch with our bodies, nature, and the power of prayer. There seems to be a spiritual renaissance, of sorts, going on in the “new age” movement.</p>
-                </div>   
+                    <p>old fashion nokia snake game</p>    
+                    {/* <img className='headImg' src={require('../../../../assets/fakeData/fakeHeadImg.png')} alt='' height='' /> */}
+                </div>
+                <div className='subAppWrapper'>
+                    <SubApp/>
+                </div>
             </StyledSnake>
         )
     }

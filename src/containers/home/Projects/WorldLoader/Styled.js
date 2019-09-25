@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledB= styled.div`
-
+export const StyledWorldLoader= styled.div`
 img {
     width: 100 vh;
     z-index:-1;
@@ -24,7 +23,7 @@ h1{
     display: inline-block;
     list-style-type: none;
     font: bold 70px futura;
-    color: white;
+    // color: white;
     text-align: left;
     padding: 0;
     margin-bottom: 0px;
@@ -33,7 +32,7 @@ h1{
 h2{
     display: inline-block;
     font: bold 28px futura;
-    color: white;
+    // color: white;
  
 }
 

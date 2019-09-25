@@ -12,10 +12,9 @@ export const StyledHome = styled.div`
         font-family: "Futura Bold";
         src: url('../../assets/fonts/futura');
         }
-
-    font-family: 'Nunito';
+    
     border: 0px solid #1F9F81;
-    //background-color: transparent;
+
 }
 
 .container {
@@ -28,10 +27,10 @@ export const StyledHome = styled.div`
 }
 
 
-.header {
+header {
     color:red;
     display: flex;
-    font: bold 16px futura;
+    font: bold 16px Nunito;
     grid-column: 3 / 4;
 }
 
@@ -42,11 +41,24 @@ export const StyledHome = styled.div`
     padding-top:30px;
 }
 
-.projectsTitle {
+.projectsTitleColumn {
     grid-column: 3 / 4;
 }
 
+.contentFont{
+    font-family:Nunito
 
+}
+
+.projectTitle { 
+    color: #007FFF; 
+    text-decoration:none;
+    padding:0px;
+    padding-top:30px;
+    padding-bottom:20px;
+    font: bold 70px futura;
+
+}
 
 .bg{
     z-index:-2;
@@ -58,7 +70,8 @@ export const StyledHome = styled.div`
     background-position:0px
 }
 
-.icons {
+
+footer {
     text-align: right;
     position: fixed;
     right:30px
@@ -70,6 +83,9 @@ img {
 }
 
 //transition group
+  .page{
+        
+  }
   .page-enter {
     opacity: 0;
     transform: scale(1.1);

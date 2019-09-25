@@ -4,14 +4,7 @@ export const StyledProjectList= styled.div`
 
 .content {
     overflow: scroll;
-}
-
-.projectLink { 
-    color: #007FFF; 
-    text-decoration:none;
-    padding:0px;
-    padding-top:30px;
-    padding-bottom:20px;
+    padding-left: 10px;
 
 }
 
@@ -28,7 +21,6 @@ a,li {
     color: inherit;
     text-decoration: none;
     list-style-type: none;
-    font: bold 70px futura;
     text-align: left;
     padding: 0;
 }

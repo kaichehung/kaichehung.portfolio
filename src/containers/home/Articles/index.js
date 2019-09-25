@@ -11,7 +11,7 @@ export default class Articles extends Component{
         return(
             <StyledArticles>
                 <div className=''>
-                    <p>place holder</p>
+                    {/* <p>place holder</p> */}
                 </div>
             </StyledArticles>
         )

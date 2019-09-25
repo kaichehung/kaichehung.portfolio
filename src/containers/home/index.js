@@ -11,9 +11,9 @@ import ProjectList from './ProjectList'
 import Articles from './Articles'
 import About from './About'
 import Snake from './Projects/Snake'
-import B from './Projects/B'
-import C from './Projects/C'
-import D from './Projects/D'
+import PiggyBaku from './Projects/PiggyBaku'
+import NYCCimreDataVis from './Projects/NYCCimreDataVis'
+import WorldLoader from './Projects/WorldLoader'
 import { StyledHome } from './Styled';
 import BgComponent from '../components/BgComponent'
 
@@ -35,10 +35,7 @@ class Home extends Component {
     componentDidUpdate(){}
 
     render(){
-        // const {
-        //     //snake,
-        // } = this.props;
-        const navRoutes = [
+        const routes = [
             {
                 path: "/",
                 exact: true,
@@ -54,96 +51,89 @@ class Home extends Component {
                 exact: false,
                 component: About,
             },
-        ];                
-        const projectsRoutes = [
+
+            //Projects 
             {
                 path: "/snake",
                 exact: false,
                 component: Snake,
             },
             {
-                path: "/B",
+                path: "/piggy_baku",
                 exact: false,
-                component: B,
+                component: PiggyBaku,
             },
             {
-                path: "/C",
+                path: "/nyc_cimre_data_vis",
                 exact: false,
-                component: C,
+                component: NYCCimreDataVis,
             },
             {
-                path: "/D",
+                path: "/world_loader",
                 exact: false,
-                component: D,
+                component: WorldLoader,
             },
         ];
-
+        const footerSNS = [
+            {
+                url:"https://github.com/kaichehung",
+                icon:require("../../assets/images/Github-icon.png"),
+                alt:"github",
+                height:"36"
+            },
+            {
+                url:"https://www.linkedin.com/in/kai-hung-9a81a8183/",
+                icon:require("../../assets/images/LinkedIn-icon.png"),
+                alt:"linkedin",
+                height:"36"
+            },
+            {
+                url:"https://medium.com/@kaichehung",
+                icon:require("../../assets/images/Medium-icon.png"),
+                alt:"medium",
+                height:"34"
+            }
+        ]
+        
         return(
             <StyledHome>                
                 <div className='container'>
-                    <div className='header'>
+                    <header className='header'>
                         <Link to="/">PROJECTS</Link>
                         <Link to="/articles">ARTICLES</Link>
                         <Link to="/about">ABOUT</Link>
-                    </div>
+                    </header>
 
-                    <div className='projectsTitle'>
+                    <div className='projectsTitleColumn'>
+                    <TransitionGroup>
                         <Switch>
-
-                            {navRoutes.map(({path ,exact ,component},index)=>(
-                                <Route key={index} path={path} exact={exact} component={component} />
-                                ))}
-                            {projectsRoutes.map(({path ,exact ,component:Component },index)=>(
+                            {routes.map(({path ,exact ,component:Component },index)=>(
                                 <Route key={index} path={path} exact={exact}>
                                     {({match})=>(
-                                    <TransitionGroup>
-                                        <CSSTransition
+                                            <CSSTransition
                                             in={match != null}
                                             timeout={300}
                                             classNames="page"
                                             unmountOnExit
-                                            >
-                                            <div className="page">
-                                                <Component />
+                                            >   
+                                            <div className="page" >
+                                                <Component match={match}/>
                                             </div>
-                                        </CSSTransition>
-                                    </TransitionGroup>
+                                            </CSSTransition>  
                                     )}
                                 </Route>
                                 ))}
-                        </Switch>    
+                        </Switch>
+                    </TransitionGroup>        
                     </div>
 
-
-
-        {/* {routes.map(({ path, Component }) => (
-            <Route key={path} exact path={path}>
-              {({ match }) => (
-                <CSSTransition
-                  in={match != null}
-                  timeout={300}
-                  classNames="page"
-                  unmountOnExit
-                >
-                  <div className="page">
-                    <Component />
-                  </div>
-                </CSSTransition>
-              )}
-            </Route>
-        ))} */}
-
-                    <div className='icons'>
-                        <a href="https://github.com/kaichehung" target="_blank">
-                            <img src={require('../../assets/images/Github-icon.png')} alt='github' height='36' />
-                        </a>
-                        <a href="https://www.linkedin.com/in/kai-hung-9a81a8183/" target="_blank">
-                            <img src={require('../../assets/images/LinkedIn-icon.png')} alt='linkedin' height='36' />
-                        </a>
-                        <a href="https://medium.com/@kaichehung" target="_blank">
-                            <img src={require('../../assets/images/Medium-icon.png')} alt='medium' height='34' />
-                        </a>
-                    </div>
+                    <footer>
+                        {footerSNS.map((sns)=>(
+                            <a href={sns.url} target="_blank">
+                                <img src={sns.icon} alt={sns.alt} height={sns.height} />
+                            </a>
+                        ))}
+                    </footer>
                 </div>
 
                 <BgComponent/>

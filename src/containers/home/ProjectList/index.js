@@ -15,10 +15,10 @@ export default class ProjectList extends Component{
             {/* use map function instead*/}
             <div className='content'>
                 <ul>
-                    <li className="projectLink"><Link className='category' to={`${this.props.match.url}snake`}>Snake</Link></li> 
-                    <li className="projectLink"><Link className='category' to={`${this.props.match.url}B`}>Layers</Link></li> 
-                    <li className="projectLink"><Link className='category' to={`${this.props.match.url}C`}>project C title place holder</Link></li> 
-                    <li className="projectLink"><Link className='category' to={`${this.props.match.url}D`}>Piggy Baku</Link></li> 
+                    <li className="projectTitle"><Link className='category' to={`${this.props.match.url}snake`}>Snake</Link></li> 
+                    <li className="projectTitle"><Link className='category' to={`${this.props.match.url}piggy_baku`}>Piggy Baku</Link></li> 
+                    <li className="projectTitle"><Link className='category' to={`${this.props.match.url}nyc_cimre_data_vis`}>NYC Crime Data Visualization </Link></li> 
+                    <li className="projectTitle"><Link className='category' to={`${this.props.match.url}world_loader`}>World Loader</Link></li> 
                 </ul>
             </div>
             

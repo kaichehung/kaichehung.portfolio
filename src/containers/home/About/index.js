@@ -25,7 +25,7 @@ export default class About extends Component{
                                 {
                                     Object.keys(skillData).map((key)=>{
                                         return(
-                                            <div className='item'>
+                                            <div className='item contentFont'>
                                                 <h3>{key}</h3>
                                                 {skillData[key].map((technique)=>{
                                                     return (<p className='tech'>{technique}</p>)
@@ -42,7 +42,7 @@ export default class About extends Component{
                                 {
                                     educationData.map((edu)=>{
                                         return(
-                                            <div className='item'>
+                                            <div className='item contentFont'>
                                                 <h3>{edu.school}</h3>
                                                 <p>{edu.program}</p>
                                                 <p>{edu.period}</p>
@@ -57,7 +57,7 @@ export default class About extends Component{
                                 {
                                     experienceData.map((exp)=>{
                                         return(
-                                        <div className='item'>
+                                        <div className='item contentFont'>
                                             <h3>{exp.company}</h3>
                                             <p>{exp.position}</p>
                                             <p>{exp.period}</p>
