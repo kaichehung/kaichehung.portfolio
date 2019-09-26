@@ -12,11 +12,12 @@ img {
 
 
 * {
-    padding-left:20px;
+
     text-align:left
 }
 
 .head{
+    padding-left:20px;
     width:70%;
 }
 
@@ -28,7 +29,8 @@ h1{
     text-align: left;
     padding: 0;
     margin-bottom: 0px;
-}
+    margin-right:20px;
+}   
 
 h2{
     display: inline-block;

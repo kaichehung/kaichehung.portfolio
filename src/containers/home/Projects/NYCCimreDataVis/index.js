@@ -15,11 +15,9 @@ export default class NYCCimreDataVis extends Component {
             <StyledNYCCimreDataVis>
                 <div className='head'>
                     <h1>2018 NYC Crime <br/> 
-                        Data Visualization
+                        Data Visualizations  
                     </h1>
                     <h2>Data Vis</h2>
-
-
                 </div>  
             </StyledNYCCimreDataVis>
         )

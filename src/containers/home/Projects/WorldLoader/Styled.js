@@ -9,7 +9,6 @@ img {
 
 }
 
-
 * {
     padding-left:20px;
     text-align:left
