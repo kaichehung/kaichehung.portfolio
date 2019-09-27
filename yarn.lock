@@ -1085,6 +1085,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
+"@kaichehung/untitled@https://api.observablehq.com/@kaichehung/untitled.tgz?v=3":
+  version "3072.0.0"
+  resolved "https://api.observablehq.com/@kaichehung/untitled.tgz?v=3#28b708696f365425d9757eb86d682a620abe30c5"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -1097,6 +1101,31 @@
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
+
+"@observablehq/inspector@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@observablehq/inspector/-/inspector-3.1.0.tgz#4726f9aabc58aa410a4ba27adf89b180fa9a302b"
+  integrity sha512-DOx40q05QZdQnYpUsKch+8raWGmKSBh5DIAinQRoK+ij7Eq/PKpHJvNrrhThF4+2b/qViUhZGOwMLPhlC2qMzg==
+  dependencies:
+    esm "^3.0.84"
+
+"@observablehq/runtime@4":
+  version "4.4.4"
+  resolved "https://registry.yarnpkg.com/@observablehq/runtime/-/runtime-4.4.4.tgz#e799204fe04ae0eaf40fe7a65dde47f31e10c578"
+  integrity sha512-lHfXGlNfbd/kYV8weO4r4O7jTlmEWFmYgYEGmktiMkcWlvOHdGRmXUf6NxmdbJbZFbGVwxvcV2cQgpUwz/3xBg==
+  dependencies:
+    "@observablehq/inspector" "^3.1.0"
+    "@observablehq/stdlib" "^3.0.0"
+    esm "^3.0.84"
+
+"@observablehq/stdlib@^3.0.0":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@observablehq/stdlib/-/stdlib-3.1.1.tgz#65e4368cba5920aa649c8c2a0c9d8f23bb51150f"
+  integrity sha512-lwt+ThlV5QIFg7WCIKn7IvCnGpEsGw8BkASPd5yyNZ7hU8gxubE7jOChVte8Lf+yMQmZsju55bCsk813+u4GxQ==
+  dependencies:
+    d3-require "^1.2.0"
+    esm "^3.0.84"
+    marked "https://github.com/observablehq/marked.git#94c6b946f462fd25db4465d71a6859183f86c57f"
 
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   version "4.2.0"
@@ -3106,6 +3135,11 @@ cyclist@~0.2.2:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-0.2.2.tgz#1b33792e11e914a2fd6d6ed6447464444e5fa640"
   integrity sha1-GzN5LhHpFKL9bW7WRHRkRE5fpkA=
 
+d3-require@^1.2.0:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/d3-require/-/d3-require-1.2.3.tgz#65a1c2137e69c5c442f1ca2a04f72a3965124c16"
+  integrity sha512-zfat3WTZRZmh7jCrTIhg4zZvivA0DZvez8lZq0JwYG9aW8LcSUFO4eiPnL5F2MolHcLE8CLfEt06sPP8N7y3AQ==
+
 d@1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/d/-/d-1.0.1.tgz#8698095372d58dbee346ffd0c7093f99f8f9eb5a"
@@ -3800,6 +3834,11 @@ eslint@^6.1.0:
     table "^5.2.3"
     text-table "^0.2.0"
     v8-compile-cache "^2.0.3"
+
+esm@^3.0.84:
+  version "3.2.25"
+  resolved "https://registry.yarnpkg.com/esm/-/esm-3.2.25.tgz#342c18c29d56157688ba5ce31f8431fbb795cc10"
+  integrity sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==
 
 espree@^6.1.0:
   version "6.1.0"
@@ -6165,6 +6204,10 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+"marked@https://github.com/observablehq/marked.git#94c6b946f462fd25db4465d71a6859183f86c57f":
+  version "0.3.12"
+  resolved "https://github.com/observablehq/marked.git#94c6b946f462fd25db4465d71a6859183f86c57f"
+
 md5.js@^1.3.4:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/md5.js/-/md5.js-1.3.5.tgz#b5d07b8e3216e3e27cd728d72f70d1e6a342005f"
@@ -8420,6 +8463,11 @@ recursive-readdir@2.2.2:
   dependencies:
     minimatch "3.0.4"
 
+redux-immutable@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/redux-immutable/-/redux-immutable-4.0.0.tgz#3a1a32df66366462b63691f0e1dc35e472bbc9f3"
+  integrity sha1-Ohoy32Y2ZGK2NpHw4dw15HK7yfM=
+
 redux-logger@^3.0.6:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/redux-logger/-/redux-logger-3.0.6.tgz#f7555966f3098f3c88604c449cf0baf5778274bf"
@@ -8754,10 +8802,22 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@^6.4.0, rxjs@^6.5.2:
+rxjs-compat@^6.5.3:
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/rxjs-compat/-/rxjs-compat-6.5.3.tgz#18440949b2678bf87a78a754009676b2c49183dc"
+  integrity sha512-BIJX2yovz3TBpjJoAZyls2QYuU6ZiCaZ+U96SmxQpuSP/qDUfiXPKOVLbThBB2WZijNHkdTTJXKRwvv5Y48H7g==
+
+rxjs@^6.4.0:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.5.2.tgz#2e35ce815cd46d84d02a209fb4e5921e051dbec7"
   integrity sha512-HUb7j3kvb7p7eCUHE3FqjoDsC1xfZQ4AHFWfTKSpZ+sAhhz5X1WX0ZuUqWbzB2QhSLp3DoLUG+hMdEDKqWo2Zg==
+  dependencies:
+    tslib "^1.9.0"
+
+rxjs@^6.5.3:
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.5.3.tgz#510e26317f4db91a7eb1de77d9dd9ba0a4899a3a"
+  integrity sha512-wuYsAYYFdWTAnAaPoKGNhfpWwKZbJW+HgAJ+mImp+Epl7BG8oNWBCTyRM8gba9k4lk8BgWdoYm21Mo/RYhhbgA==
   dependencies:
     tslib "^1.9.0"
 

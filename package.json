@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@kaichehung/crimal-in-nyc-from-2018": "https://api.observablehq.com/@kaichehung/crimal-in-nyc-from-2018.tgz?v=3",
+    "@kaichehung/untitled": "https://api.observablehq.com/@kaichehung/untitled.tgz?v=3",
+    "@observablehq/runtime": "4",
     "cross-fetch": "^3.0.4",
     "immutable": "^4.0.0-rc.12",
     "lodash": "^4.17.15",

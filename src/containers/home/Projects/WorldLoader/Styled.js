@@ -32,7 +32,6 @@ h2{
     display: inline-block;
     font: bold 28px futura;
     // color: white;
- 
 }
 
 .headImg {
@@ -42,6 +41,5 @@ h2{
 
 .content{
     width: 70%;
-
 }
 `;

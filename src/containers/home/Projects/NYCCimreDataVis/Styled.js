@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 export const StyledNYCCimreDataVis= styled.div`
 
+.observablehq{
+    margin-top:px;
+    margin-bottom:20px;
+}
+
 img {
     width: 100 vh;
     z-index:-1;
