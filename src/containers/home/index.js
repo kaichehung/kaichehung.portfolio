@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch } from "react-router-dom";
-import PropTypes from 'prop-types';
-import { Map, List } from 'immutable';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 //Components
@@ -17,20 +13,11 @@ import WorldLoader from './Projects/WorldLoader'
 import { StyledHome } from './Styled';
 import BgComponent from '../components/BgComponent'
 
-// import {
-// } from './actions';
-// import {
-// } from './selectors';
 
 class Home extends Component {
-    static propTypes = {
-        //snake: PropTypes.instanceOf(Map),
+    componentDidMount(){
+        console.log(this.props.location)
     }
-    static defaultProps = {
-        //snake: Map(),
-        //handleOnSetSnakeMoving: () => { },
-    }
-    componentDidMount(){}
     componentWillUnmount(){}
     componentDidUpdate(){}
 
@@ -79,19 +66,22 @@ class Home extends Component {
                 url:"https://github.com/kaichehung",
                 icon:require("../../assets/images/Github-icon.png"),
                 alt:"github",
-                height:"36"
+                height:"36",
+                index:'g'
             },
             {
                 url:"https://www.linkedin.com/in/kai-hung-9a81a8183/",
                 icon:require("../../assets/images/LinkedIn-icon.png"),
                 alt:"linkedin",
-                height:"36"
+                height:"36",
+                index:'l'
             },
             {
                 url:"https://medium.com/@kaichehung",
                 icon:require("../../assets/images/Medium-icon.png"),
                 alt:"medium",
-                height:"34"
+                height:"34",
+                index:'m'
             }
         ]
         
@@ -99,9 +89,9 @@ class Home extends Component {
             <StyledHome>                
                 <div className='container'>
                     <header className='header'>
-                        <Link to="/">PROJECTS</Link>
-                        <Link to="/articles">ARTICLES</Link>
-                        <Link to="/about">ABOUT</Link>
+                        <Link  to="/">PROJECTS</Link>
+                        <Link  to="/articles">ARTICLES</Link>
+                        <Link  to="/about">ABOUT</Link>
                     </header>
 
                     <div className='projectsTitleColumn'>
@@ -129,8 +119,8 @@ class Home extends Component {
 
                     <footer>
                         {footerSNS.map((sns)=>(
-                            <a href={sns.url} target="_blank">
-                                <img src={sns.icon} alt={sns.alt} height={sns.height} />
+                            <a href={sns.url} target="_blank" key={sns.index}>
+                                <img className ='snsIcon' src={sns.icon} alt={sns.alt} height={sns.height} />
                             </a>
                         ))}
                     </footer>

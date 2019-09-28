@@ -7,50 +7,21 @@ export const StyledNYCCimreDataVis= styled.div`
     margin-bottom:20px;
 }
 
-img {
-    width: 100 vh;
-    z-index:-1;
-    position:absolute;
-    top:0px; left:0px;
-
-}
-
-
-* {
-
-    text-align:left
-}
-
-.head{
-    padding-left:20px;
-    width:70%;
-}
-
-h1{
-    display: inline-block;
-    list-style-type: none;
-    font: bold 70px futura;
-    // color: white;
-    text-align: left;
-    padding: 0;
-    margin-bottom: 0px;
-    margin-right:20px;
-}   
-
-h2{
-    display: inline-block;
-    font: bold 28px futura;
-    // color: white;
- 
-}
-
-.headImg {
-    padding:0px;
-    width:100%;
-}
-
 .content{
     width: 70%;
+}
 
+.observablehq--inspect{
+    display:none
+}
+#setup,#libraries-and-utilities,#map,#ui,#chart,#pie,#data{
+   display:none   
+}
+h1{
+    color:#fa4646;
+} 
+
+h2{
+    color:#fa4646;
 }
 `;

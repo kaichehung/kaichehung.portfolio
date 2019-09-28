@@ -6,14 +6,18 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { directive } from '@babel/types';
 import {StyledSnake} from './Styled'
+import {StyledProjects} from '../Styled'
 import SubApp from './src/index'
 export default class Snake extends Component {
 
     render(){
         return(
+            <StyledProjects>
             <StyledSnake>
                 <div className='head'>                    
                     <h1 className='title projectTitle'>Snake</h1>
+                    <h2>React-Redux framework</h2>
+
                 </div>
                 <div className='content'>
                     <p>old fashion nokia snake game</p>    
@@ -23,6 +27,7 @@ export default class Snake extends Component {
                     <SubApp/>
                 </div>
             </StyledSnake>
+            </StyledProjects>
         )
     }
 

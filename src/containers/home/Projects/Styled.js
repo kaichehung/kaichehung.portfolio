@@ -2,38 +2,45 @@ import styled from 'styled-components';
 
 export const StyledProjects= styled.div`
 
-.content {
-    overflow: scroll;
+* {
+    text-align:left
 }
 
-.projectLink { 
-    color: #007FFF; 
-    text-decoration:none;
-    padding:0px;
-    padding-top:30px;
-    padding-bottom:20px;
-
+.head{
+    padding-left:20px;
+    width:70%;
 }
 
-ul{
-    height:75vh;
-    padding:0;
-}
-
-a,li {
+h1{
+    display: inline-block;
     list-style-type: none;
     font: bold 70px futura;
     text-align: left;
     padding: 0;
+    margin-bottom: 0px;
+    margin-right:20px
+    color:#007FFF
+
 }
 
-li:nth-child(odd){
-    color:#007FFF;
+h2{
+    display: inline-block;
+    font: bold 28px futura;
+    color:#007FFF
 }
 
-li:nth-child(even){
-    color:#979797;
+p{
+    font-size:115%;
+    margin-right:0px;
+    margin-left:0px;
+}
+.head p{
+    font-size:130%;
 }
 
+.content{
+    padding-left:20px;
+    width: 70%;
+}
 
 `;

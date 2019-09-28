@@ -13,6 +13,7 @@ export default class WaveComponent extends Component {
     render(){
         return(
             <StyledWaveComponent>
+                <div id="wave"></div>
                 <div className="waveWrapper waveAnimation">
                     <div className="waveWrapperInner bgTop">
                         <div className="wave waveTop" style={{backgroundImage: `url(${waveTop})`}}></div>

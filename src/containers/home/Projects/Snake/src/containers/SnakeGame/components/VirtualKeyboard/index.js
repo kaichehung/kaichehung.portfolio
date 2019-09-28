@@ -13,12 +13,12 @@ import {
 const VirtualKeyboard = ({ handleOnClick }) => (
     <StyledVirtualKeyboard>
         <div>
-            <div data-code={ARROW_UP} className="virtual-keyboard__button fas fa-arrow-circle-up" onClick={handleOnClick} />
+            <div data-code={ARROW_UP} className="virtual-keyboard__button fas fa-arrow-circle-up fa-sm" onClick={handleOnClick} />
         </div>
         <div className="virtual-keyboard__wrapper-bottom">
-            <div data-code={ARROW_LEFT} className="virtual-keyboard__button fas fa-arrow-circle-left" onClick={handleOnClick} />
-            <div data-code={ARROW_DOWN} className="virtual-keyboard__button fas fa-arrow-circle-down" onClick={handleOnClick} />
-            <div data-code={ARROW_RIGHT} className="virtual-keyboard__button fas fa-arrow-circle-right" onClick={handleOnClick} />
+            <div data-code={ARROW_LEFT} className="virtual-keyboard__button fas fa-arrow-circle-left fa-sm" onClick={handleOnClick} />
+            <div data-code={ARROW_DOWN} className="virtual-keyboard__button fas fa-arrow-circle-down fa-sm" onClick={handleOnClick} />
+            <div data-code={ARROW_RIGHT} className="virtual-keyboard__button fas fa-arrow-circle-right fa-sm" onClick={handleOnClick} />
         </div>
     </StyledVirtualKeyboard>
 );

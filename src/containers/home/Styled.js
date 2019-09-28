@@ -35,10 +35,14 @@ header {
 }
 
 .header>a { 
+    position:relative;
+    top:10px
     color: #007FFF; 
     text-decoration:none;
     padding:20px;
-    padding-top:30px;
+}
+.header>a:hover { 
+    color:#003fa3;
 }
 
 .projectsTitleColumn {
@@ -78,17 +82,17 @@ footer {
     bottom:20px;
 }
 
-img {
+.snsIcon {
     padding:10px
 }
 
-//transition group
+///transition group///
   .page{
         
   }
   .page-enter {
     opacity: 0;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   
   .page-enter-active {

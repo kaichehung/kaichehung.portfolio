@@ -2,52 +2,61 @@ import styled from 'styled-components';
 
 export const StyledPiggyBaku= styled.div`
 
-// img {
-//     width: 100 vh;
-//     z-index:-1;
-//     position:absolute;
-//     top:0px; left:0px;
-// }
-
-
-* {
-    padding-left:20px;
-    text-align:left
+img{
+    z-index:10;
+    padding:0px;
 }
 
 .head{
-    width:70%;
+    width:75%;
+    height:800px
+}
+body.{
+    width:75%;
 }
 
+
 h1{
-    display: inline-block;
-    list-style-type: none;
-    font: bold 70px futura;
     color: white;
-    text-align: left;
-    padding: 0;
-    margin-bottom: 0px;
 }
 
 h2{
-    display: inline-block;
-    font: bold 28px futura;
     color: white;
     
- 
+}
+p{
+    letter-spacing:1px;
+    word-spacing: 2px;
+    line-height: 1.5;
+    width:70%
+    color: white;
+    padding: 0px;
 }
 
-.headImg {
-    padding:0px;
-    width:100%;
-}
 
-.content{
-    width: 70%;
+.wave{
+    height:200%
 
 }
 
-.bgWave{
+#hand{
+    width:40%;
+    position:absolute;
+    top: 100px;
+    right:0px;
+}
 
+#behance{
+    position:relative;
+    top:12px;
+    left:20px;
+}
+
+#linkText{
+    text-decoration: underline;
+    font-size:150%;
+}
+#linkText:Hover{
+    color:#00a66e
 }
 `;

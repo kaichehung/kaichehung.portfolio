@@ -59,6 +59,7 @@ p,h3,h4{
 
 p{
     padding: 0px 0px 5px 20px;
+    color:#979797
 }
 
 .name{
@@ -86,6 +87,11 @@ h2 {
     font: bold 32px futura;    
     color: #007FFF; 
 }
+
+h3{
+    color:#979797
+}
+
 
 @media screen and (max-width: 575px){
     .col2-row3{

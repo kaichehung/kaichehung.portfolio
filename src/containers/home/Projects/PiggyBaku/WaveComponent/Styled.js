@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 
 export const StyledWaveComponent= styled.div`
+
+
+
+
+
 @keyframes move_wave {
     0% {
         transform: translateX(0) translateZ(0) scaleY(1)
@@ -33,15 +38,15 @@ export const StyledWaveComponent= styled.div`
     background-image: linear-gradient(to top, #34eba8 20%, #20d694 80%);
 }
 .bgTop {
-    z-index: 15;
+    z-index: 3;
     opacity: 0.5;
 }
 .bgMiddle {
-    z-index: 10;
+    z-index: 2;
     opacity: 0.75;
 }
 .bgBottom {
-    z-index: 5;
+    z-index: 1;
 }
 .wave {
     position: absolute;
