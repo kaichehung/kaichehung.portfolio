@@ -28,11 +28,11 @@ class Home extends Component {
                 exact: true,
                 component: ProjectList,
             },
-            {
-                path: "/articles/",
-                exact: false,
-                component: Articles,
-            },
+            // {
+            //     path: "/articles/",
+            //     exact: false,
+            //     component: Articles,
+            // },
             {
                 path: "/about/",
                 exact: false,
@@ -40,6 +40,11 @@ class Home extends Component {
             },
 
             //Projects 
+            {
+                path: "/world_loader",
+                exact: false,
+                component: WorldLoader,
+            },
             {
                 path: "/snake",
                 exact: false,
@@ -55,11 +60,7 @@ class Home extends Component {
                 exact: false,
                 component: NYCCimreDataVis,
             },
-            {
-                path: "/world_loader",
-                exact: false,
-                component: WorldLoader,
-            },
+
         ];
         const footerSNS = [
             {
@@ -90,7 +91,7 @@ class Home extends Component {
                 <div className='container'>
                     <header className='header'>
                         <Link  to="/">PROJECTS</Link>
-                        <Link  to="/articles">ARTICLES</Link>
+                        {/* <Link  to="/articles">ARTICLES</Link> */}
                         <Link  to="/about">ABOUT</Link>
                     </header>
 

@@ -7,6 +7,12 @@ export const StyledNYCCimreDataVis= styled.div`
     margin-bottom:20px;
 }
 
+.head{
+    width:75%
+}
+
+
+
 .content{
     width: 70%;
 }

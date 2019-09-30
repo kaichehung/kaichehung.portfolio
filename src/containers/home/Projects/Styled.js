@@ -7,8 +7,7 @@ export const StyledProjects= styled.div`
 }
 
 .head{
-    padding-left:20px;
-    width:70%;
+    padding-left:20px;    
 }
 
 h1{
@@ -19,6 +18,7 @@ h1{
     padding: 0;
     margin-bottom: 0px;
     margin-right:20px
+    margin-top:30px;
     color:#007FFF
 
 }
@@ -33,6 +33,8 @@ p{
     font-size:115%;
     margin-right:0px;
     margin-left:0px;
+    display: inline-block;
+
 }
 .head p{
     font-size:130%;

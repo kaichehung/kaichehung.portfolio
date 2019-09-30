@@ -17,15 +17,14 @@ export default class Snake extends Component {
                 <div className='head'>                    
                     <h1 className='title projectTitle'>Snake</h1>
                     <h2>React-Redux framework</h2>
-
                 </div>
                 <div className='content'>
-                    <p>old fashion nokia snake game</p>    
-                    {/* <img className='headImg' src={require('../../../../assets/fakeData/fakeHeadImg.png')} alt='' height='' /> */}
+                    <p>Retro snake game which is made of react-redux framework with detail implementation including redux-observable, reselect, immutable</p>    
                 </div>
                 <div className='subAppWrapper'>
                     <SubApp/>
                 </div>
+                <div ></div>
             </StyledSnake>
             </StyledProjects>
         )

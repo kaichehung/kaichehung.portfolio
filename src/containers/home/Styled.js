@@ -14,7 +14,6 @@ export const StyledHome = styled.div`
         }
     
     border: 0px solid #1F9F81;
-
 }
 
 .container {
@@ -85,6 +84,8 @@ footer {
 .snsIcon {
     padding:10px
 }
+
+
 
 ///transition group///
   .page{

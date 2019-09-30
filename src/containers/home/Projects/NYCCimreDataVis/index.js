@@ -25,6 +25,7 @@ export default class NYCCimreDataVis extends Component {
     componentDidMount() {
         runtime.module(notebook, Inspector.into('#dataVisContainer'));
     }
+    
     render(){
         return(
             <StyledProjects>
