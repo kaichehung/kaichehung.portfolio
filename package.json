@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@kaichehung/crimal-in-nyc-from-2018": "https://api.observablehq.com/@kaichehung/crimal-in-nyc-from-2018.tgz?v=3",
     "@kaichehung/untitled": "https://api.observablehq.com/@kaichehung/untitled.tgz?v=3",
     "@observablehq/runtime": "4",
     "cross-fetch": "^3.0.4",
@@ -25,6 +24,7 @@
     "reselect": "^4.0.0",
     "rxjs": "^6.5.3",
     "rxjs-compat": "^6.5.3",
+    "serve": "^11.2.0",
     "styled-components": "^4.3.2"
   },
   "scripts": {
