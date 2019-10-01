@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.755336f7.chunk.css",
+    "main.js": "/static/js/main.e737d8eb.chunk.js",
+    "main.js.map": "/static/js/main.e737d8eb.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.ab0f8bc2.js",
+    "runtime~main.js.map": "/static/js/runtime~main.ab0f8bc2.js.map",
+    "static/js/2.fde7b9d9.chunk.js": "/static/js/2.fde7b9d9.chunk.js",
+    "static/js/2.fde7b9d9.chunk.js.map": "/static/js/2.fde7b9d9.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c5d3f36477f50caadb08d1181b16a21a.js": "/precache-manifest.c5d3f36477f50caadb08d1181b16a21a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.755336f7.chunk.css.map": "/static/css/main.755336f7.chunk.css.map",
+    "static/media/3DSceneParsingReconstruction00.png": "/static/media/3DSceneParsingReconstruction00.3a6c8ef6.png",
+    "static/media/deepbox.png": "/static/media/deepbox.5d997680.png",
+    "static/media/depthEstimation.png": "/static/media/depthEstimation.af625b73.png",
+    "static/media/detectron.jpg": "/static/media/detectron.5b24efe5.jpg",
+    "static/media/kai2.png": "/static/media/kai2.936914aa.png",
+    "static/media/phoneOnHand.png": "/static/media/phoneOnHand.26bb3a2f.png",
+    "static/media/profile.png": "/static/media/profile.93945ef1.png",
+    "static/media/prototype00.gif": "/static/media/prototype00.9a9f61e7.gif",
+    "static/media/prototype01.gif": "/static/media/prototype01.3f68dae9.gif",
+    "static/media/systemDiagram.png": "/static/media/systemDiagram.25135e0f.png",
+    "static/media/volume.jpg": "/static/media/volume.6a166517.jpg",
+    "static/media/wave-bot.png": "/static/media/wave-bot.6cd18bc0.png",
+    "static/media/wave-mid.png": "/static/media/wave-mid.ba75e0c9.png",
+    "static/media/wave-top.png": "/static/media/wave-top.05d52988.png"
+  }
+}
